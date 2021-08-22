@@ -17,7 +17,7 @@ Autoencoders represent an effective approach for computing the underlying factor
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_chess.gif"> |
 
-<hr style="border:2px solid gray"> </hr>
+<hr style="border:2px solid gray"></hr>
 
 | **AEAI** | **AAE** | **ACAI** |
 |:-------------------------:|:-------------------------:|:-------------------------:|
@@ -26,7 +26,7 @@ Autoencoders represent an effective approach for computing the underlying factor
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_wood.gif"> |
 
-<hr style="border:2px solid gray"> </hr>
+<hr style="border:2px solid gray"></hr>
 
 | **AEAI** | **AAE** | **ACAI** |
 |:-------------------------:|:-------------------------:|:-------------------------:|
