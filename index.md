@@ -32,14 +32,13 @@ and \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\)
 
 \\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
 
+and similarly:
+
+\\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'), \boldsymbol x\_j ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha),\boldsymbol x\_j) \\]
 
 3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant K: 
 
-<!-- \\[ \| \hat \boldsymbol x_{i \rightarrow j}(\alpha), \hat \boldsymbol x_{i \rightarrow j}(\alpha+t) \| \leq K |t| \\] -->
-
-$$
-$$
-
+\\[ \| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \| \leq K |t| \\]
 
 
 <!-- \\( d(\hat \x_{i \rightarrow j}(\alpha), \x_i ) \leq d(\hat \x_{i \rightarrow j}(\alpha'),\x_i)
