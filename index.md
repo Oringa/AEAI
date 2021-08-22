@@ -38,7 +38,7 @@ and similarly:
 
 3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant \\(K\\): 
 
-\\[ \| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \| Kt \\]
+\\[ \|\| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \|\| K \| t \| \\]
 
 4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
 
