@@ -1,6 +1,7 @@
+url: 'https://oringa.github.io/' # your main domain
+baseurl: '' # if you're using custom domain keep this blank example: baseurl: ''
+
 theme: jekyll-theme-cayman
 github:
   is_project_page: false
 
-url: 'https://oringa.github.io/' # your main domain
-baseurl: '' # if you're using custom domain keep this blank example: baseurl: ''
