@@ -23,14 +23,7 @@ Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\
 
 We define an interpolation to be an **admissible interpolation** if \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(\alpha) \\) satisfies the following conditions:
 
-1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(0) = \boldsymbol x_i \\)
-
-
-1. **Boundary conditions**: \\( \hat \boldsymbol x_{i \rightarrow j}(0)=\boldsymbol x_i \quad \text{and} \quad  \hat \boldsymbol x_{i \rightarrow j}(1)= \boldsymbol x_j \\)
-
-\\( \hat x_i \\)
-\\( \hat{\boldsymbol{x}}_i \\)
-
+1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(0) = \boldsymbol x_i \\) and \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\)
 
 
 ## Animations
