@@ -10,7 +10,7 @@ We argue that these incongruities are due to the structure of the latent space a
 
 In this work, we propose a regularization technique that shapes the latent representation to follow a manifold that is consistent with the training images and that drives the manifold to be smooth and locally convex. This regularization not only enables faithful interpolation between data points, as we show herein, but can also be used as a general regularization technique to avoid overfitting or to produce new samples for data augmentation.
 
-<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_pole.gif">
+<img width="500" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_wood.gif">
 
 ## Motivation
 
