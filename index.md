@@ -39,27 +39,9 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 
 4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
 
-    \\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{for some constant \\(\beta \geq 0\\)}  \\]
+    \\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{ for some constant \\(\beta \geq 0\\)}  \\]
 
-<!-- \\( \\)
-$\forall \alpha \in [0,1]$ We require that it is highly probable that interpolated images, $\hat \x_{i \rightarrow j}(\alpha)$ belong to $\cal X$. 
- Namely,
-  $$ P(\hat \x_{i \rightarrow j}(\alpha)) \geq 1-\beta,
-~~~~~\mbox{for some constant $\beta \geq 0$}
-$$ -->
-
-
-<!-- \\( d(\hat \x_{i \rightarrow j}(\alpha), \x_i ) \leq d(\hat \x_{i \rightarrow j}(\alpha'),\x_i)
-\\)
-and similarly:
-$$
-d(\hat \x_{i \rightarrow j}(\alpha'), \x_j ) \leq d(\hat \x_{i \rightarrow j}(\alpha),\x_j) 
-$$ -->
-
-
-
-
-
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
 
 ## Animations
 
