@@ -1,8 +1,8 @@
 # AEAI
 
-The **Autoencoder Adversarial Interpolation** (AEAI) is a novel approach for the generation of realistic interpolation between manifold data. 
+The **Autoencoder Adversarial Interpolation** (AEAI) is a novel approach for the generation of admissible interpolation in manifold data and was published in [ICML2021](https://proceedings.mlr.press/v139/oring21a).
 
-This paper was written under the supervision of [Prof. Zohar Yakhini](https://zohary.cswp.cs.technion.ac.il/) and [Prof. Yacov Hel-Or](https://faculty.idc.ac.il/toky/) from the Interdisciplinary Center Herzliya.
+This paper was written by [Alon Oring](https://www.linkedin.com/in/oringa/) under the supervision of [Prof. Zohar Yakhini](https://zohary.cswp.cs.technion.ac.il/) and [Prof. Yacov Hel-Or](https://faculty.idc.ac.il/toky/) from the Interdisciplinary Center Herzliya.
 
 ## Abstract
  
