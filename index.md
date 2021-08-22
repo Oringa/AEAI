@@ -10,6 +10,8 @@ We argue that these incongruities are due to the structure of the latent space a
 
 In this work, we propose a regularization technique that shapes the latent representation to follow a manifold that is consistent with the training images and that drives the manifold to be smooth and locally convex. This regularization not only enables faithful interpolation between data points, as we show herein, but can also be used as a general regularization technique to avoid overfitting or to produce new samples for data augmentation.
 
+<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_pole.gif">
+
 ## Motivation
 
 1. Autoencoder latent spaces are non-convex: While they represent an effective approach for exposing latent factors, autoencoders demonstrate visible artifacts while interpolating a convex sum of latent vectors.
@@ -41,7 +43,7 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 
     \\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{ for some constant \\(\beta \geq 0\\)}  \\]
 
-<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
+<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
 
 ## Animations
 
