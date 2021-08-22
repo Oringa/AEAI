@@ -7,8 +7,10 @@ Autoencoders represent an effective approach for computing the underlying factor
 <img src="{{site.baseurl | prepend: site.url}}animations/1.gif" alt="zigzag" />
 
 
-| | | |
+| AEAI | AEE | ACAI | VAE | GAIA | AMR |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|  <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|
-|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">  |  <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|
-|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">  |  <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif">|
+|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
+
+|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
+
+|<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
