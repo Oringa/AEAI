@@ -26,10 +26,19 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 and \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\)
 
 
-1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(0) = \boldsymbol x_i \\) 
+1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(0) = \boldsymbol x_i  \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\) 
 2. **Monotonicity**: We require that under some defined distance on the manifold \\( d(\boldsymbol x,\boldsymbol x') \\) the interpolated points will depart from \\( \boldsymbol x_i \\) and approach \\( \boldsymbol x_j \\), as the parameterization \\( \alpha \\) goes from \\(0\\) to \\(1\\). Namely, \\( \forall \alpha' \geq \alpha \\):
 
-\\[ d(\hat \boldsymbol x_{i \rightarrow j}(\alpha), \boldsymbol x_i ) \leq d(\hat \boldsymbol x_{i \rightarrow j}(\alpha'),\boldsymbol x_i) \\]
+\\[ d \\]
+<!-- (\hat \boldsymbol x_{i \rightarrow j}(\alpha), \boldsymbol x_i ) \leq d(\hat \boldsymbol x_{i \rightarrow j}(\alpha'),\boldsymbol x_i) -->
+
+
+3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant K: 
+
+\\[ \| \hat \boldsymbol x_{i \rightarrow j}(\alpha), \hat \boldsymbol x_{i \rightarrow j}(\alpha+t) \| \leq K |t| \\]
+
+$$
+$$
 
 
 
