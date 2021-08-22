@@ -1,4 +1,4 @@
-# Autoencoder Image Interpolation by Shaping the Latent Space
+# AEAI
 
 ## Abstract
  
