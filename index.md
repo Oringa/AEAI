@@ -16,3 +16,8 @@ Autoencoders represent an effective approach for computing the underlying factor
 
 |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
 
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
+<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
