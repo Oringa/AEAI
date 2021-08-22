@@ -1,5 +1,7 @@
-@import "{{ site.theme }}";
+---
+---
 
+@import 'jekyll-theme-cayman';
 .inner {
   max-width: 150%;
 }
