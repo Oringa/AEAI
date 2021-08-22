@@ -19,11 +19,11 @@ In this work, we propose a regularization technique that shapes the latent repre
 
 Before presenting the proposed approach we would like to define what constitutes a proper interpolation between two data points. There are many possible paths between two points on the manifold. Even if we require the interpolations to be on a geodesic path, there might be infinitely many such paths between two points. Therefore, we relax the geodesic requirement and define less restrictive conditions.
 
-Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\\). We are interested in interpolating between two data points \\( \boldsymbol x_i \\) and \\( \boldsymbol x_j \\) from \\(\cal{X}\\). Let the interpolated points be \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(\alpha) \\) for \\( \alpha \in [0,1] \\) and let \\(P(\boldsymbol x)\\) be the probability that a data point \\(\boldsymbol x\\) belongs to \\(\cal{X}\\).  
+Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\\). We are interested in interpolating between two data points \\( \boldsymbol x\_i \\) and \\( \boldsymbol x\_j \\) from \\(\cal{X}\\). Let the interpolated points be \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) for \\( \alpha \in [0,1] \\) and let \\(P(\boldsymbol x)\\) be the probability that a data point \\(\boldsymbol x\\) belongs to \\(\cal{X}\\).  
 
-We define an interpolation to be an **admissible interpolation** if \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(\alpha) \\) satisfies the following conditions:
+We define an interpolation to be an **admissible interpolation** if \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) satisfies the following conditions:
 
-and \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\)
+and \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(1) = \boldsymbol x\_j \\)
 
 
 1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(0) = \boldsymbol x\_i \\) and \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(1) = \boldsymbol x\_j \\)
@@ -36,9 +36,9 @@ and similarly:
 
 \\[ d( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'), \boldsymbol x\_j ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha),\boldsymbol x\_j) \\]
 
-3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant K: 
+3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant \\(K\\): 
 
-\\[ \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \\]
+\\[ \| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \| Kt \\]
 
 4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
 
