@@ -12,7 +12,7 @@ In this work, we propose a regularization technique that shapes the latent repre
 
 ## Motivation
 
-1. Autoencoder latent spaces are non-convex.
+1. Autoencoder latent spaces are non-convex: While they represent an effective approach for exposing latent factors, autoencoders demonstrate visible artifacts while interpolating a convex sum of latent vectors.
 2. GANs are not bidirectional: To interpolate between two real data points, we must map the datapoints back into latent space where admissible interpolation can be performed. Such inverse mapping is not a part of the GAN framework. Additionally, the latent space of the GAN does not necessarily encode a smooth parameterization of the data. 
 
 ## Manifold Data Interpolation
@@ -38,7 +38,7 @@ and similarly:
 
 3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant K: 
 
-\\[ \| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \| \leq K |t| \\]
+\\[ \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \leq K |t| \\]
 
 4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
 
