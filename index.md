@@ -30,7 +30,7 @@ and \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(1) = \boldsymbol x_j \\)
 
 2. **Monotonicity**: We require that under some defined distance on the manifold \\( d(\boldsymbol x,\boldsymbol x') \\) the interpolated points will depart from \\( \boldsymbol x\_i \\) and approach \\( \boldsymbol x\_j \\), as the parameterization \\( \alpha \\) goes from \\(0\\) to \\(1\\). Namely, \\( \forall \alpha' \geq \alpha \\):
 
-\\[ d(\hat \boldsymbol x\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat \boldsymbol x\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
+\\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
 
 
 3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant K: 
