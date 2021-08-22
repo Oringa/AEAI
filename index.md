@@ -27,19 +27,19 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 
 2. **Monotonicity**: We require that under some defined distance on the manifold \\( d(\boldsymbol x,\boldsymbol x') \\) the interpolated points will depart from \\( \boldsymbol x\_i \\) and approach \\( \boldsymbol x\_j \\), as the parameterization \\( \alpha \\) goes from \\(0\\) to \\(1\\). Namely, \\( \forall \alpha' \geq \alpha \\):
 
-\\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
+    \\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
 
     and similarly:
 
-\\[ d( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'), \boldsymbol x\_j ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha),\boldsymbol x\_j) \\]
+    \\[ d( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'), \boldsymbol x\_j ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha),\boldsymbol x\_j) \\]
 
 3. **Smoothness**: The interpolation function is Lipschitz continuous with a constant \\(K\\): 
 
-\\[ \|\| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \|\| \leq K \| t \| \\]
+    \\[ \|\| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \|\| \leq K \| t \| \\]
 
 4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
 
-\\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{for some constant \\(\beta \geq 0\\)}  \\]
+    \\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{for some constant \\(\beta \geq 0\\)}  \\]
 
 <!-- \\( \\)
 $\forall \alpha \in [0,1]$ We require that it is highly probable that interpolated images, $\hat \x_{i \rightarrow j}(\alpha)$ belong to $\cal X$. 
