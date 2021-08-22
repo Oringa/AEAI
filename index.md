@@ -15,12 +15,22 @@ Autoencoders represent an effective approach for computing the underlying factor
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_chess.gif"> |
 
+| **AEAI** | **AAE** | **ACAI** |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aae_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/acai_wood.gif"> 
+| **VAE** | **GAIA** | **AMR** |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_wood.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_wood.gif"> |
+
+
+
+
 
 <!-- |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
 
 |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |<img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> | <img width="1604" alt="1" src="{{site.baseurl | prepend: site.url}}animations/1.gif"> |
  -->
-<img width="1000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
+<!-- <img width="1000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif"> -->
 <!-- <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
 <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
 <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif">
