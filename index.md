@@ -23,16 +23,13 @@ Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\
 
 We define an interpolation to be an **admissible interpolation** if \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) satisfies the following conditions:
 
-and \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(1) = \boldsymbol x\_j \\)
-
-
 1. **Boundary conditions**: \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(0) = \boldsymbol x\_i \\) and \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(1) = \boldsymbol x\_j \\)
 
 2. **Monotonicity**: We require that under some defined distance on the manifold \\( d(\boldsymbol x,\boldsymbol x') \\) the interpolated points will depart from \\( \boldsymbol x\_i \\) and approach \\( \boldsymbol x\_j \\), as the parameterization \\( \alpha \\) goes from \\(0\\) to \\(1\\). Namely, \\( \forall \alpha' \geq \alpha \\):
 
 \\[ d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \boldsymbol x\_i ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'),\boldsymbol x\_i) \\]
 
-and similarly:
+    and similarly:
 
 \\[ d( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha'), \boldsymbol x\_j ) \leq d(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha),\boldsymbol x\_j) \\]
 
