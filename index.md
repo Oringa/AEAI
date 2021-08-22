@@ -13,13 +13,13 @@ In this work, we propose a regularization technique that shapes the latent repre
 ## Motivation
 
 1. Autoencoder latent spaces are non-convex.
-2. GANs are not bidirectional.
+2. GANs are not bidirectional: To interpolate between two real data points, we must map the datapoints back into latent space where admissible interpolation can be performed. Such inverse mapping is not a part of the GAN framework. Additionally, the latent space of the GAN does not necessarily encode a smooth parameterization of the data. 
 
 ## Manifold Data Interpolation
 
 Before presenting the proposed approach we would like to define what constitutes a proper interpolation between two data points. There are many possible paths between two points on the manifold. Even if we require the interpolations to be on a geodesic path, there might be infinitely many such paths between two points. Therefore, we relax the geodesic requirement and define less restrictive conditions.
 
-Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\\). We are interested in interpolating between two data points \\( \boldsymbol x_i \\) and \\( \boldsymbol x_j \\) from \\(\cal{X}\\). Let the interpolated points be \\( \hat{\boldsymbol{x}}_{i,j}(\alpha) \\) be...
+Formally, assume we are given a dataset sampled from a target domain \\(\cal{X}\\). We are interested in interpolating between two data points \\( \boldsymbol x_i \\) and \\( \boldsymbol x_j \\) from \\(\cal{X}\\). Let the interpolated points be \\( \hat{\boldsymbol{x}}_{i \rightarrow j}(\alpha) \\) be...
 
 
 
