@@ -40,6 +40,17 @@ and similarly:
 
 \\[ \| \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha), \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha+t) \| \leq K |t| \\]
 
+4. **Credability**: We require that \\( \forall \alpha \in [0,1] \\) it is highly probable that interpolated images, \\( \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) \\) belong to \\(\cal{X} \\). Namely, 
+
+\\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{for some constant \\(\beta \geq 0\\)}  \\]
+
+<!-- \\( \\)
+$\forall \alpha \in [0,1]$ We require that it is highly probable that interpolated images, $\hat \x_{i \rightarrow j}(\alpha)$ belong to $\cal X$. 
+ Namely,
+  $$ P(\hat \x_{i \rightarrow j}(\alpha)) \geq 1-\beta,
+~~~~~\mbox{for some constant $\beta \geq 0$}
+$$ -->
+
 
 <!-- \\( d(\hat \x_{i \rightarrow j}(\alpha), \x_i ) \leq d(\hat \x_{i \rightarrow j}(\alpha'),\x_i)
 \\)
