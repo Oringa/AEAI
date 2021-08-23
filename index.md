@@ -72,7 +72,7 @@ Putting everything together we define the loss \\(\cal{L}\_{i \rightarrow j}\\) 
 
 <figure>
   <img width="1500" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png" alt="latent intuition"/>
-  <figcaption>This is my caption text.</figcaption>
+  <figcaption>This is my \\(  \cal{L}\_C\\)caption text.</figcaption>
 </figure>
 
 
