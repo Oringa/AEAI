@@ -10,12 +10,10 @@ We argue that these incongruities are due to the structure of the latent space a
 
 In this work, we propose a regularization technique that shapes the latent representation to follow a manifold that is consistent with the training images and that drives the manifold to be smooth and locally convex. This regularization not only enables faithful interpolation between data points, as we show herein, but can also be used as a general regularization technique to avoid overfitting or to produce new samples for data augmentation.
 
-<div style="text-align:center"><img width="500" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_wood.gif"></div>.
-
 ## Motivation
 
-1. Autoencoder latent spaces are non-convex: While they represent an effective approach for exposing latent factors, autoencoders demonstrate visible artifacts while interpolating a convex sum of latent vectors.
-2. GANs are not bidirectional: To interpolate between two real data points, we must map the datapoints back into latent space where admissible interpolation can be performed. Such inverse mapping is not a part of the GAN framework. Additionally, the latent space of the GAN does not necessarily encode a smooth parameterization of the data. 
+1. **Autoencoder latent spaces are non-convex**: While they represent an effective approach for exposing latent factors, autoencoders demonstrate visible artifacts while interpolating a convex sum of latent vectors.
+2. **GANs are not bidirectional**: To interpolate between two real data points, we must map the datapoints back into latent space where admissible interpolation can be performed. Such inverse mapping is not a part of the GAN framework. Additionally, the latent space of the GAN does not necessarily encode a smooth parameterization of the data. 
 
 ## Manifold Data Interpolation
 
@@ -43,7 +41,21 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 
     \\[ P(\hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha)) \geq 1-\beta \mbox{ for some constant \\(\beta \geq 0\\)}  \\]
 
+## Proposed Approach
+
+Following the above definitions for an admissible interpolation, we propose a new approach, called **Autoencoder Adversarial Interpolation** (AEAI), which shapes the latent space according to the above requirements.
+
+For pairs of input data points \\(boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we linearly interpolate between them in the latent space: \\( \z\_{i \rightarrow j}(\alpha) = (1-\alpha) \z\_i + \alpha \z\_j \\), where \\( \alpha \in [0,1] \\).
+
+The first term \\( {\cal L}\_R \\) is a standard reconstruction loss and is calculated for the two endpoints \\( \boldsymbol{x}\_i \\) and \\( \boldsymbol{x}\_j \\): 
+
+\\[ \\]
+\cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\x\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\x}\_j)
+where \\({\cal L}(\cdot,\cdot)\\) is some loss function between the two images
+\\(  \\)
+
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
+
 
 ## Animations
 
