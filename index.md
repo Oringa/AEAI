@@ -64,6 +64,13 @@ For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we l
 4. The last term \\(\cal{L}\_S\\) is the smoothness loss encouraging \\(\hat{\boldsymbol{x}}(\alpha)\\) to produce smoothly varying interpolated points between \\( \boldsymbol{x}_i \\) and \\( \boldsymbol{x}_j\\):
     \\[ \cal{L}\_{S}^{i \rightarrow j}= \sum\_{n=0}^M \left \| {\frac{\partial \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) }{\partial \alpha}}  \right \|^2\_{\alpha={n}/M} \\]
 
+Putting everything together we define the loss \\(\cal{L}\_{i \rightarrow j}\\) between pairs \\( \boldsymbol{x}_i \\) and \\( \boldsymbol{x}_j\\) as follows: 
+\\[ \cal{L}^{i \rightarrow j} = \cal{L}\_R^{i \rightarrow j} + \lambda\_A \cal{L}\_A^{i \rightarrow j} + \lambda\_C \cal{L}\_C^{i \rightarrow j} + \lambda\_S \cal{L}\_S^{i \rightarrow j} \\]
+ where \\(\cal{L}\_R, \cal{L}\_A, \cal{L}\_C, \cal{L}\_S\\) are the reconstruction, adversarial, cycle, and smoothness losses, respectively.
+
+
+
+
 \\(  \\)
 
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
