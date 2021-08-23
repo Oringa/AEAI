@@ -108,11 +108,11 @@ We use the parameterization of the dataset to evaluate the reconstruction accura
 
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/iqr_all_methods_reb.png">
 
-Predicting the interpolated alpha value based on the \\(L_2\\) distance of the interpolated image to the closest image in the dataset. The dots represent the median and the colored area corresponds to the interquartile range.
+Predicting the interpolated alpha value based on the \\(L\_2\\) distance of the interpolated image to the closest image in the dataset. The dots represent the median and the colored area corresponds to the interquartile range.
 
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/source_target_reb.png">
 
-We sampled two images \\(\boldsymbol{x}_i, \boldsymbol{x}_j\\) and linearly interpolated between them in latent space. For each interpolated image, we retrieved the closest image in terms of MSE from the dataset. The blue and orange lines present the averaged \\(L_2\\) distance, in the parameter space \\((\theta,\phi)\\), between the retrieved image and \\(\boldsymbol{x}_i, \boldsymbol{x}_j\\), respectively. The red lines represent perfect interpolation smoothness.
+We sampled two images \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) and linearly interpolated between them in latent space. For each interpolated image, we retrieved the closest image in terms of MSE from the dataset. The blue and orange lines present the averaged \\(L\_2\\) distance, in the parameter space \\((\theta,\phi)\\), between the retrieved image and \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\), respectively. The red lines represent perfect interpolation smoothness.
 ## BibTeX
 
 If you find our work useful, please cite our paper:
