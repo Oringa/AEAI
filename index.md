@@ -109,6 +109,7 @@ We demonstrate that our technique (AEAI) produces admissible interpolations whil
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_pole.gif"> |
 
+Each animation demonstrates the reconstruction resulting from a linear interpolation in latent space of each method. The first two animation blocks shows objects from the COIL-100 dataset and the third block shows our synthetic pole dataset. The initial and final images in each animation were sampled from the testing dataset.
 
 ## Results
 
