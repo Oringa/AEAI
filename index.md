@@ -47,10 +47,18 @@ Following the above definitions for an admissible interpolation, we propose a ne
 
 For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we linearly interpolate between them in the latent space: \\( \boldsymbol{z}\_{i \rightarrow j}(\alpha) = (1-\alpha) \boldsymbol{z}\_i + \alpha \boldsymbol{z}\_j \\), where \\( \alpha \in [0,1] \\).
 
-The first term \\( {\cal L}\_R \\) is a standard reconstruction loss and is calculated for the two endpoints \\( \boldsymbol{x}\_i \\) and \\( \boldsymbol{x}\_j \\): 
+1. The first loss term \\( {\cal L}\_R \\) is a standard reconstruction loss and is calculated for the two endpoints \\( \boldsymbol{x}\_i \\) and \\( \boldsymbol{x}\_j \\): 
 
-\\[ \cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\boldsymbol{x}\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\boldsymbol{x}}\_j) \\]
-where \\({\cal L}(\cdot,\cdot)\\) is some loss function between the two images
+    \\[ \cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\boldsymbol{x}\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\boldsymbol{x}}\_j) \\]
+    where \\({\cal L}(\cdot,\cdot)\\) is some loss function between the two images.
+
+2. We use a discriminator \\( D(\boldsymbol{x})\\) to differentiate between real and interpolated data points to encourage the network to fool the discriminator so that interpolated images are indistinguishable from the data in the target domain \\(\cal{X}\\).
+
+\\[ \cal{L}\_A^{i \rightarrow j}= \sum\_{n=0}^{M} -\log D(\hat{\boldsymbol{x}}\_{i \rightarrow j}(n/M)) \\]
+
+
+
+
 \\(  \\)
 
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
