@@ -84,6 +84,8 @@ Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_
 
 We demonstrate that our technique (AEAI) produces admissible interpolations while other techniques fail to reconsutrct in-between images realistically or to transition smoothly from mode to mode. We tested the following techniques: [Adversarial Autoencoder](https://arxiv.org/abs/1511.05644) (AAE), [Adversarially Constrained Autoencoder Interpolation](https://arxiv.org/abs/1807.07543) (ACAI), [\\(\beta\\)-Variational Autoencoder](https://openreview.net/forum?id=Sy2fzU9gl) (\\(\beta\\)-VAE), [Generative Adversarial Interpolative Autoencoding](https://arxiv.org/abs/1807.06650) (GAIA) and [Adversarial Mixup Resynthesis](https://arxiv.org/abs/1903.02709) (AMR).
 
+Each animation demonstrates the reconstruction resulting from a linear interpolation in latent space of each method between two images sampled from a testing dataset. The first two animation blocks shows objects from the COIL-100 dataset and the third block shows our synthetic pole dataset.
+
 | **AEAI** | **AAE** | **ACAI** |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aeai_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/aae_chess.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/acai_chess.gif"> 
@@ -109,7 +111,6 @@ We demonstrate that our technique (AEAI) produces admissible interpolations whil
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_pole.gif"> |
 
-Each animation demonstrates the reconstruction resulting from a linear interpolation in latent space of each method. The first two animation blocks shows objects from the COIL-100 dataset and the third block shows our synthetic pole dataset. The initial and final images in each animation were sampled from the testing dataset.
 
 ## Results
 
