@@ -68,15 +68,8 @@ Putting everything together we define the loss \\(\cal{L}\_{i \rightarrow j}\\) 
 \\[ \cal{L}^{i \rightarrow j} = \cal{L}\_R^{i \rightarrow j} + \lambda\_A \cal{L}\_A^{i \rightarrow j} + \lambda\_C \cal{L}\_C^{i \rightarrow j} + \lambda\_S \cal{L}\_S^{i \rightarrow j} \\]
  where \\(\cal{L}\_R, \cal{L}\_A, \cal{L}\_C, \cal{L}\_S\\) are the reconstruction, adversarial, cycle, and smoothness losses, respectively.
 
-
-
-<figure>
-  <img width="1500" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png" alt="latent intuition"/>
-</figure>
-Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) are located on the input data manifold (solid black line). The encoder \\( f(\x)\\) maps input points into the latent space \\(\boldsymbol{z}\_i\\), \\(\boldsymbol{z}\_j\\) (red arrows). Linear interpolation in the latent space is represented by the blue dashed line. The interpolated latent codes are mapped back into the input space by the decoder \\(g(\z)\\) (blue arrows). 
-
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
-Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) are located on the input data manifold (solid black line). The encoder \\( f(\x)\\) maps input points into the latent space \\(\boldsymbol{z}\_i\\), \\(\boldsymbol{z}\_j\\) (red arrows). Linear interpolation in the latent space is represented by the blue dashed line. The interpolated latent codes are mapped back into the input space by the decoder \\(g(\z)\\) (blue arrows). 
+Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) are located on the input data manifold (solid black line). The encoder \\( f(\boldsymbol{x})\\) maps input points into the latent space \\(\boldsymbol{z}\_i\\), \\(\boldsymbol{z}\_j\\) (red arrows). Linear interpolation in the latent space is represented by the blue dashed line. The interpolated latent codes are mapped back into the input space by the decoder \\(g(\boldsymbol{z})\\) (blue arrows). 
 
 
 ## Animations
@@ -107,7 +100,19 @@ Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_
 |<img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/beta_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/gaia_pole.gif"> | <img width="2000" alt="1" src="{{site.baseurl | prepend: site.url}}animations/amr_pole.gif"> |
 
 
+## Results
 
+<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/all_res_reb.png">
+
+We use the parameterization of the dataset to evaluate the reconstruction accuracy of the AAE, ACAI, \\( \beta \\)-VAE, AMR, GAIA and our proposed method. Upper left graph: Averaged MSE vs. \\(\alpha\\) values. Upper right graph: STD of MSE vs. \\(\alpha\\) values. Lower graph: Averaged MSE of the interpolated images vs. the interval length.
+
+<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/iqr_all_methods_reb.png">
+
+Predicting the interpolated alpha value based on the \\(L_2\\) distance of the interpolated image to the closest image in the dataset. The dots represent the median and the colored area corresponds to the interquartile range.
+
+<img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/source_target_reb.png">
+
+We sampled two images \\(\boldsymbol{x}_i, \boldsymbol{x}_j\\) and linearly interpolated between them in latent space. For each interpolated image, we retrieved the closest image in terms of MSE from the dataset. The blue and orange lines present the averaged \\(L_2\\) distance, in the parameter space \\((\theta,\phi)\\), between the retrieved image and \\(\boldsymbol{x}_i, \boldsymbol{x}_j\\), respectively. The red lines represent perfect interpolation smoothness.
 ## BibTeX
 
 If you find our work useful, please cite our paper:
