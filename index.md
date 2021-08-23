@@ -49,8 +49,7 @@ For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we l
 
 The first term \\( {\cal L}\_R \\) is a standard reconstruction loss and is calculated for the two endpoints \\( \boldsymbol{x}\_i \\) and \\( \boldsymbol{x}\_j \\): 
 
-\\[ \\]
-\cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\boldsymbol{x}\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\boldsymbol{x}}\_j)
+\\[ \cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\boldsymbol{x}\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\boldsymbol{x}}\_j) \\]
 where \\({\cal L}(\cdot,\cdot)\\) is some loss function between the two images
 \\(  \\)
 
