@@ -54,14 +54,15 @@ For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we l
 
 2. We use a discriminator \\( D(\boldsymbol{x})\\) to differentiate between real and interpolated data points to encourage the network to fool the discriminator so that interpolated images are indistinguishable from the data in the target domain \\(\cal{X}\\).
 
-\\[ \cal{L}\_A^{i \rightarrow j}= \sum\_{n=0}^{M} -\log D(\hat{\boldsymbol{x}}\_{i \rightarrow j}(n/M)) \\]
+    \\[ \cal{L}\_A^{i \rightarrow j}= \sum\_{n=0}^{M} -\log D(\hat{\boldsymbol{x}}\_{i \rightarrow j}(n/M)) \\]
 
 3. The cycle-consistency loss \\(\cal{L}\_C\\) encourages the encoder and the decoder to produce a bijective mapping:
- \\[ \cal{L}\_{C}^{i \rightarrow j}= \sum_{n=0}^{M} \| \boldsymbol{z}\_{i \rightarrow j}(n/M)- \hat{\boldsymbol{z}}\_{i \rightarrow j}(n/M)\|^2 \\]
+    \\[ \cal{L}\_{C}^{i \rightarrow j}= \sum_{n=0}^{M} \| \boldsymbol{z}\_{i \rightarrow j}(n/M)- \hat{\boldsymbol{z}}\_{i \rightarrow j}(n/M)\|^2 \\]
 
- where \\(\hat{\boldsymbol{z}}\_{i \rightarrow j}(\alpha) =f(g(\boldsymbol{z}\_{i \rightarrow j}(\alpha))) \\). 
+    where \\(\hat{\boldsymbol{z}}\_{i \rightarrow j}(\alpha) =f(g(\boldsymbol{z}\_{i \rightarrow j}(\alpha))) \\). 
 
-
+4. The last term \\(\cal{L}\_S\\) is the smoothness loss encouraging \\(\hat{\boldsymbol{x}}(\alpha)\\) to produce smoothly varying interpolated points between \\( \boldsymbol{x}_i \\) and \\( \boldsymbol{x}_j\\):
+    \\[ \cal{L}\_{S}^{i \rightarrow j}= \sum\_{n=0}^M \left \| {\frac{\partial \hat{\boldsymbol{x}}\_{i \rightarrow j}(\alpha) }{\partial \alpha}}  \right \|^2\_{\alpha={n}/M} \\]
 
 \\(  \\)
 
