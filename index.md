@@ -105,6 +105,7 @@ Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/all_res_reb.png">
 
 We use the parameterization of the dataset to evaluate the reconstruction accuracy of the AAE, ACAI, \\( \beta \\)-VAE, AMR, GAIA and our proposed method. Upper left graph: Averaged MSE vs. \\(\alpha\\) values. Upper right graph: STD of MSE vs. \\(\alpha\\) values. Lower graph: Averaged MSE of the interpolated images vs. the interval length.
+\\ 
 &nbsp;
 <hr style="border:1px solid gray">
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/iqr_all_methods_reb.png">
