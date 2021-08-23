@@ -56,6 +56,10 @@ For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we l
 
 \\[ \cal{L}\_A^{i \rightarrow j}= \sum\_{n=0}^{M} -\log D(\hat{\boldsymbol{x}}\_{i \rightarrow j}(n/M)) \\]
 
+3. The cycle-consistency loss \\(\cal{L}\_C\\) encourages the encoder and the decoder to produce a bijective mapping:
+ \\[ \cal{L}\_{C}^{i \rightarrow j}= \sum_{n=0}^{M} \| \boldsymbol{z}\_{i \rightarrow j}(n/M)- \hat{\boldsymbol{z}}\_{i \rightarrow j}(n/M)\|^2 \\]
+
+ where \\(\hat{\boldsymbol{z}}\_{i \rightarrow j}(\alpha) =f(g(\boldsymbol{z}\_{i \rightarrow j}(\alpha))) \\). 
 
 
 
