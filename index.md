@@ -45,12 +45,12 @@ We define an interpolation to be an **admissible interpolation** if \\( \hat{\bo
 
 Following the above definitions for an admissible interpolation, we propose a new approach, called **Autoencoder Adversarial Interpolation** (AEAI), which shapes the latent space according to the above requirements.
 
-For pairs of input data points \\(boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we linearly interpolate between them in the latent space: \\( \z\_{i \rightarrow j}(\alpha) = (1-\alpha) \z\_i + \alpha \z\_j \\), where \\( \alpha \in [0,1] \\).
+For pairs of input data points \\( \boldsymbol{x}\_i, \boldsymbol{x}\_j\\), we linearly interpolate between them in the latent space: \\( \boldsymbol{z}\_{i \rightarrow j}(\alpha) = (1-\alpha) \boldsymbol{z}\_i + \alpha \boldsymbol{z}\_j \\), where \\( \alpha \in [0,1] \\).
 
 The first term \\( {\cal L}\_R \\) is a standard reconstruction loss and is calculated for the two endpoints \\( \boldsymbol{x}\_i \\) and \\( \boldsymbol{x}\_j \\): 
 
 \\[ \\]
-\cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\x\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\x}\_j)
+\cal{L}\_{R}^{i \rightarrow j} = \cal{L}(\boldsymbol{x}\_i,\hat{\boldsymbol{x}}\_i) + \cal{L}(\boldsymbol{x}\_j,\hat{\boldsymbol{x}}\_j)
 where \\({\cal L}(\cdot,\cdot)\\) is some loss function between the two images
 \\(  \\)
 
