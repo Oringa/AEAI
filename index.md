@@ -72,15 +72,11 @@ Putting everything together we define the loss \\(\cal{L}\_{i \rightarrow j}\\) 
 
 <figure>
   <img width="1500" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png" alt="latent intuition"/>
-  <figcaption>This is my \\(  \cal{L}\_C\\)caption text.</figcaption>
 </figure>
-
-
-
-
-\\(  \\)
+Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) are located on the input data manifold (solid black line). The encoder \\( f(\x)\\) maps input points into the latent space \\(\boldsymbol{z}\_i\\), \\(\boldsymbol{z}\_j\\) (red arrows). Linear interpolation in the latent space is represented by the blue dashed line. The interpolated latent codes are mapped back into the input space by the decoder \\(g(\z)\\) (blue arrows). 
 
 <img width="1500" alt="1" src="{{site.baseurl | prepend: site.url}}images/latent_intuition.png">
+Data interpolation using AEAI. Two points \\(\boldsymbol{x}\_i, \boldsymbol{x}\_j\\) are located on the input data manifold (solid black line). The encoder \\( f(\x)\\) maps input points into the latent space \\(\boldsymbol{z}\_i\\), \\(\boldsymbol{z}\_j\\) (red arrows). Linear interpolation in the latent space is represented by the blue dashed line. The interpolated latent codes are mapped back into the input space by the decoder \\(g(\z)\\) (blue arrows). 
 
 
 ## Animations
